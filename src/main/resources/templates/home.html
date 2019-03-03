@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<table border="1">
+    <div class="container">
+        <h4 th:text="'Upload the File'">Upload the File</h4>
+        <br>
+        <form action="/uploadImage" enctype="multipart/form-data" method="POST">
+            <div class="custom-file">
+                <input type="file" name="imageFile"/>
+            </div>
+            <br>
+            <input type="submit" value="Submit" class="btn btn-primary"/>
+        </form>
+    </div>
+</table>
+</body>
+</html>
